@@ -25,7 +25,9 @@
   "maxConcurrency": 5,
   "maxWorkers": 11,
   "noStackTrace": false,
-  "nonFlagArgs": [],
+  "nonFlagArgs": [
+    "fetchFilms.test.js"
+  ],
   "notify": false,
   "notifyMode": "failure-change",
   "onlyChanged": false,
@@ -54,17 +56,18 @@
   ],
   "rootDir": "C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test",
   "runTestsByPath": false,
-  "seed": 1417976105,
+  "seed": -133599024,
   "skipFilter": false,
   "snapshotFormat": {
     "escapeString": false,
     "printBasicPrototype": false
   },
   "testFailureExitCode": 1,
-  "testPathPattern": "",
+  "testPathPattern": "fetchFilms.test.js",
   "testSequencer": "C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\@jest\\test-sequencer\\build\\index.js",
   "updateSnapshot": "new",
   "useStderr": false,
+  "verbose": true,
   "watch": false,
   "watchAll": false,
   "watchman": true,
