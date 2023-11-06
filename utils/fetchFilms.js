@@ -8,7 +8,6 @@ const getFilm = async (title) => {
         return null
     }
 
-    
 }
 
 const fetchFilm = async (req, res) => {
