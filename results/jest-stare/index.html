@@ -89,7 +89,7 @@
                 <canvas id="test-suites-canvas" width="100" height="100"></canvas>
                 <h2>Test Suites</h2>
                 <div class="list-group">
-                    <p id="test-suites-results" class="list-group-item list-group-item-action">2 passed, 3 total</p>
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">1 passed, 3 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -97,7 +97,7 @@
                 <canvas id="tests-canvas" width="100" height="100"></canvas>
                 <h2>Tests</h2>
                 <div class="list-group">
-                    <p id="tests-results" class="list-group-item list-group-item-action">5 passed, 9 total</p>
+                    <p id="tests-results" class="list-group-item list-group-item-action">2 passed, 4 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -130,15 +130,15 @@
         <div id="accordion">
             <div class="d-none" id="test-results">{
   &quot;numFailedTestSuites&quot;: 1,
-  &quot;numFailedTests&quot;: 4,
-  &quot;numPassedTestSuites&quot;: 2,
-  &quot;numPassedTests&quot;: 5,
+  &quot;numFailedTests&quot;: 2,
+  &quot;numPassedTestSuites&quot;: 1,
+  &quot;numPassedTests&quot;: 2,
   &quot;numPendingTestSuites&quot;: 0,
   &quot;numPendingTests&quot;: 0,
   &quot;numRuntimeErrorTestSuites&quot;: 0,
   &quot;numTodoTests&quot;: 0,
   &quot;numTotalTestSuites&quot;: 3,
-  &quot;numTotalTests&quot;: 9,
+  &quot;numTotalTests&quot;: 4,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
     &quot;added&quot;: 0,
@@ -156,7 +156,7 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1699226597624,
+  &quot;startTime&quot;: 1699299972924,
   &quot;success&quot;: false,
   &quot;testResults&quot;: [
     {
@@ -167,10 +167,10 @@
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1699226598918,
-        &quot;runtime&quot;: 819,
+        &quot;end&quot;: 1699299974171,
+        &quot;runtime&quot;: 663,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1699226598099
+        &quot;start&quot;: 1699299973508
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -203,7 +203,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Environment setup&quot;
           ],
-          &quot;duration&quot;: 9,
+          &quot;duration&quot;: 12,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Environment setup should have API_KEY defined in the .env file&quot;,
@@ -219,16 +219,16 @@
     },
     {
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 2,
+      &quot;numFailingTests&quot;: 2,
+      &quot;numPassingTests&quot;: 0,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1699226599152,
-        &quot;runtime&quot;: 1059,
+        &quot;end&quot;: 1699299974649,
+        &quot;runtime&quot;: 1142,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1699226598093
+        &quot;start&quot;: 1699299973507
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -246,181 +246,42 @@
           &quot;ancestorTitles&quot;: [
             &quot;fetchFilm utility&quot;
           ],
-          &quot;duration&quot;: 187,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
+          &quot;duration&quot;: 6,
+          &quot;failureDetails&quot;: [
+            {}
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;TypeError: fetchFilm is not a function\n    at Object.fetchFilm (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\test\\fetchFilms.test.js:5:24)\n    at Promise.then.completed (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:95:5)\n    at _runTest (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
+          ],
           &quot;fullName&quot;: &quot;fetchFilm utility should return movie details for a known movie&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 2,
+          &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
+          &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;should return movie details for a known movie&quot;
         },
         {
           &quot;ancestorTitles&quot;: [
             &quot;fetchFilm utility&quot;
           ],
-          &quot;duration&quot;: 34,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
+          &quot;duration&quot;: 1,
+          &quot;failureDetails&quot;: [
+            {}
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;TypeError: fetchFilm is not a function\n    at Object.fetchFilm (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\test\\fetchFilms.test.js:17:24)\n    at Promise.then.completed (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:95:5)\n    at _runTest (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
+          ],
           &quot;fullName&quot;: &quot;fetchFilm utility should return null for a non-existent movie&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 1,
+          &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
+          &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;should return null for a non-existent movie&quot;
         }
       ],
-      &quot;failureMessage&quot;: null
-    },
-    {
-      &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 4,
-      &quot;numPassingTests&quot;: 1,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;openHandles&quot;: [],
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1699226604777,
-        &quot;runtime&quot;: 6660,
-        &quot;slow&quot;: true,
-        &quot;start&quot;: 1699226598117
-      },
-      &quot;skipped&quot;: false,
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;uncheckedKeys&quot;: [],
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0
-      },
-      &quot;testFilePath&quot;: &quot;C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\test\\films.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Films API routes&quot;
-          ],
-          &quot;duration&quot;: 126,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Films API routes should fetch a movie by title&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 2,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should fetch a movie by title&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Films API routes&quot;
-          ],
-          &quot;duration&quot;: 5009,
-          &quot;failureDetails&quot;: [
-            {},
-            {
-              &quot;message&quot;: &quot;thrown: \&quot;Exceeded timeout of 5000 ms for a test.\nAdd a timeout value to this test to increase the timeout, if this is a long-running test. See https:&#x2F;&#x2F;jestjs.io&#x2F;docs&#x2F;api#testname-fn-timeout.\&quot;&quot;
-            }
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;TypeError: Cannot convert undefined or null to object\n    at Function.entries (&lt;anonymous&gt;)\n    at entries (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\routes\\films.js:7:16)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:95:5)&quot;,
-            &quot;Error: thrown: \&quot;Exceeded timeout of 5000 ms for a test.\nAdd a timeout value to this test to increase the timeout, if this is a long-running test. See https:&#x2F;&#x2F;jestjs.io&#x2F;docs&#x2F;api#testname-fn-timeout.\&quot;\n    at it (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\test\\films.test.js:13:3)\n    at _dispatchDescribe (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\index.js:91:26)\n    at describe (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\index.js:55:5)\n    at Object.describe (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\test\\films.test.js:5:1)\n    at Runtime._execModule (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runtime\\build\\index.js:1439:24)\n    at Runtime._loadModule (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runtime\\build\\index.js:1022:12)\n    at Runtime.requireModule (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runtime\\build\\index.js:882:12)\n    at jestAdapter (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:77:13)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:95:5)\n    at runTestInternal (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
-          ],
-          &quot;fullName&quot;: &quot;Films API routes should return 404 for a non-existent movie&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;failed&quot;,
-          &quot;title&quot;: &quot;should return 404 for a non-existent movie&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Films API routes&quot;
-          ],
-          &quot;duration&quot;: 40,
-          &quot;failureDetails&quot;: [
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: 404,
-                &quot;expected&quot;: 200,
-                &quot;message&quot;: &quot;\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m&quot;,
-                &quot;name&quot;: &quot;toBe&quot;,
-                &quot;pass&quot;: false
-              }
-            }
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at Object.toBe (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\test\\films.test.js:28:33)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:95:5)&quot;
-          ],
-          &quot;fullName&quot;: &quot;Films API routes should add a new movie&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;failed&quot;,
-          &quot;title&quot;: &quot;should add a new movie&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Films API routes&quot;
-          ],
-          &quot;duration&quot;: 4,
-          &quot;failureDetails&quot;: [
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: 404,
-                &quot;expected&quot;: 200,
-                &quot;message&quot;: &quot;\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m&quot;,
-                &quot;name&quot;: &quot;toBe&quot;,
-                &quot;pass&quot;: false
-              }
-            }
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at Object.toBe (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\test\\films.test.js:41:33)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:95:5)&quot;
-          ],
-          &quot;fullName&quot;: &quot;Films API routes should update an existing movie&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;failed&quot;,
-          &quot;title&quot;: &quot;should update an existing movie&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Films API routes&quot;
-          ],
-          &quot;duration&quot;: 3,
-          &quot;failureDetails&quot;: [
-            {
-              &quot;matcherResult&quot;: {
-                &quot;actual&quot;: 404,
-                &quot;expected&quot;: 200,
-                &quot;message&quot;: &quot;\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m&quot;,
-                &quot;name&quot;: &quot;toBe&quot;,
-                &quot;pass&quot;: false
-              }
-            }
-          ],
-          &quot;failureMessages&quot;: [
-            &quot;Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at Object.toBe (C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test\\test\\films.test.js:50:33)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:95:5)&quot;
-          ],
-          &quot;fullName&quot;: &quot;Films API routes should delete an existing movie&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;failed&quot;,
-          &quot;title&quot;: &quot;should delete an existing movie&quot;
-        }
-      ],
-      &quot;failureMessage&quot;: &quot;\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mFilms API routes › should return 404 for a non-existent movie\u001b[39m\u001b[22m\n\n    TypeError: Cannot convert undefined or null to object\n        at Function.entries (&lt;anonymous&gt;)\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  5 |\u001b[39m     \u001b[36mlet\u001b[39m film \u001b[33m&#x3D;\u001b[39m \u001b[36mawait\u001b[39m fetchFilm(req\u001b[33m.\u001b[39mparams\u001b[33m.\u001b[39mtitle)\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  6 |\u001b[39m     \u001b[36mconst\u001b[39m newObj \u001b[33m&#x3D;\u001b[39m \u001b[33mObject\u001b[39m\u001b[33m.\u001b[39mfromEntries(\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[33mObject\u001b[39m\u001b[33m.\u001b[39mentries(film)\u001b[33m.\u001b[39mmap(([k\u001b[33m,\u001b[39m v]) \u001b[33m&#x3D;&gt;\u001b[39m [k\u001b[33m.\u001b[39mtoLowerCase()\u001b[33m,\u001b[39m v])\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  8 |\u001b[39m       )\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  9 |\u001b[39m     console\u001b[33m.\u001b[39mlog(newObj)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 10 |\u001b[39m     res\u001b[33m.\u001b[39mstatus(\u001b[35m200\u001b[39m)\u001b[33m.\u001b[39mjson(newObj)\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat entries (\u001b[22m\u001b[2mroutes&#x2F;films.js\u001b[2m:7:16)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mFilms API routes › should return 404 for a non-existent movie\u001b[39m\u001b[22m\n\n    thrown: \&quot;Exceeded timeout of 5000 ms for a test.\n    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https:&#x2F;&#x2F;jestjs.io&#x2F;docs&#x2F;api#testname-fn-timeout.\&quot;\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 11 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 12 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 13 |\u001b[39m   it(\u001b[32m&#39;should return 404 for a non-existent movie&#39;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36mconst\u001b[39m title \u001b[33m&#x3D;\u001b[39m \u001b[32m&#39;NonExistentMovie12345&#39;\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 15 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m&#x3D;\u001b[39m \u001b[36mawait\u001b[39m request(app)\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m&#x60;&#x2F;api&#x2F;film&#x2F;${title}&#x60;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 16 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatusCode)\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m\u001b[33m,\u001b[39m \u001b[32m&#x60;Expected status code 404 for a non-existent movie &#39;${title}&#39;, but got ${response.statusCode}.&#x60;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat it (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest&#x2F;films.test.js\u001b[39m\u001b[0m\u001b[2m:13:3)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.describe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest&#x2F;films.test.js\u001b[39m\u001b[0m\u001b[2m:5:1)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mFilms API routes › should add a new movie\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; Object.is equality\u001b[22m\n\n    Expected: \u001b[32m200\u001b[39m\n    Received: \u001b[31m404\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 26 |\u001b[39m     }\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m&#x3D;\u001b[39m \u001b[36mawait\u001b[39m request(app)\u001b[33m.\u001b[39mpost(\u001b[32m&#39;&#x2F;api&#x2F;film&#x2F;&#39;\u001b[39m)\u001b[33m.\u001b[39msend(movie)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 28 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatusCode)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m\u001b[33m,\u001b[39m \u001b[32m&#x60;Expected status code 200 when adding a new movie, but got ${response.statusCode}.&#x60;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 29 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoBe(\u001b[32m&#x60;Se ha guardado ${movie.title}&#x60;\u001b[39m\u001b[33m,\u001b[39m \u001b[32m&#x60;Expected confirmation message for adding movie &#39;${movie.title}&#39;, but got a different message.&#x60;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest&#x2F;films.test.js\u001b[39m\u001b[0m\u001b[2m:28:33)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mFilms API routes › should update an existing movie\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; Object.is equality\u001b[22m\n\n    Expected: \u001b[32m200\u001b[39m\n    Received: \u001b[31m404\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 39 |\u001b[39m     }\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 40 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m&#x3D;\u001b[39m \u001b[36mawait\u001b[39m request(app)\u001b[33m.\u001b[39mput(\u001b[32m&#39;&#x2F;api&#x2F;film&#x2F;&#39;\u001b[39m)\u001b[33m.\u001b[39msend(updatedMovie)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 41 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatusCode)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m\u001b[33m,\u001b[39m \u001b[32m&#x60;Expected status code 200 when updating a movie, but got ${response.statusCode}.&#x60;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 42 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoBe(\u001b[32m&#x60;Se ha actualizado ${updatedMovie.title}&#x60;\u001b[39m\u001b[33m,\u001b[39m \u001b[32m&#x60;Expected confirmation message for updating movie &#39;${updatedMovie.title}&#39;, but got a different message.&#x60;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 43 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 44 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest&#x2F;films.test.js\u001b[39m\u001b[0m\u001b[2m:41:33)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mFilms API routes › should delete an existing movie\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; Object.is equality\u001b[22m\n\n    Expected: \u001b[32m200\u001b[39m\n    Received: \u001b[31m404\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 48 |\u001b[39m     }\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 49 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m&#x3D;\u001b[39m \u001b[36mawait\u001b[39m request(app)\u001b[33m.\u001b[39m\u001b[36mdelete\u001b[39m(\u001b[32m&#39;&#x2F;api&#x2F;film&#x2F;&#39;\u001b[39m)\u001b[33m.\u001b[39msend(movie)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 50 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatusCode)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m\u001b[33m,\u001b[39m \u001b[32m&#x60;Expected status code 200 when deleting a movie, but got ${response.statusCode}.&#x60;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 51 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoBe(\u001b[32m&#x60;Se ha borrado la película con ID: ${movie.id}&#x60;\u001b[39m\u001b[33m,\u001b[39m \u001b[32m&#x60;Expected confirmation message for deleting movie with ID &#39;${movie.id}&#39;, but got a different message.&#x60;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 52 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 53 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest&#x2F;films.test.js\u001b[39m\u001b[0m\u001b[2m:50:33)\u001b[22m\u001b[2m\u001b[22m\n&quot;
+      &quot;failureMessage&quot;: &quot;\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mfetchFilm utility › should return movie details for a known movie\u001b[39m\u001b[22m\n\n    TypeError: fetchFilm is not a function\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 3 |\u001b[39m describe(\u001b[32m&#39;fetchFilm utility&#39;\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 4 |\u001b[39m   it(\u001b[32m&#39;should return movie details for a known movie&#39;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 5 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m&#x3D;\u001b[39m \u001b[36mawait\u001b[39m fetchFilm(\u001b[32m&#39;Inception&#39;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 6 |\u001b[39m     expect(data)\u001b[33m.\u001b[39mtoBeDefined()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 7 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mdata) {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 8 |\u001b[39m       console\u001b[33m.\u001b[39merror(\u001b[32m\&quot;Expected movie details for &#39;Inception&#39;, but got nothing.\&quot;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.fetchFilm (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest&#x2F;fetchFilms.test.js\u001b[39m\u001b[0m\u001b[2m:5:24)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mfetchFilm utility › should return null for a non-existent movie\u001b[39m\u001b[22m\n\n    TypeError: fetchFilm is not a function\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 15 |\u001b[39m   \u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 16 |\u001b[39m   it(\u001b[32m&#39;should return null for a non-existent movie&#39;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mconst\u001b[39m data \u001b[33m&#x3D;\u001b[39m \u001b[36mawait\u001b[39m fetchFilm(\u001b[32m&#39;NonExistentMovie12345&#39;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 18 |\u001b[39m     expect(data)\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36mif\u001b[39m (data) {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 20 |\u001b[39m       console\u001b[33m.\u001b[39merror(\u001b[32m\&quot;Expected no movie details for &#39;NonExistentMovie12345&#39;, but got some data.\&quot;\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.fetchFilm (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest&#x2F;fetchFilms.test.js\u001b[39m\u001b[0m\u001b[2m:17:24)\u001b[22m\u001b[2m\u001b[22m\n&quot;
     }
   ],
   &quot;wasInterrupted&quot;: false
@@ -482,7 +343,7 @@
   ],
   &quot;rootDir&quot;: &quot;C:\\Users\\c-r-i\\OneDrive\\Escritorio\\Cris\\BOOTCAMP\\core\\backend\\ejPelis\\ejercicio_API_REST_films_con_test&quot;,
   &quot;runTestsByPath&quot;: false,
-  &quot;seed&quot;: 1595238601,
+  &quot;seed&quot;: 882318521,
   &quot;skipFilter&quot;: false,
   &quot;snapshotFormat&quot;: {
     &quot;escapeString&quot;: false,

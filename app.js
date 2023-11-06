@@ -1,25 +1,20 @@
 const express = require('express')
+  const app = express()
+  const port = 3000
 
-const { films} = require('./routes')
+  const filmsRoutes = require("./routes/films")
+  app.use(express.json()); // Habilito recepción de JSON en servidor
 
-const PORT = 4000
-const app = express()
-app.use(express.json())
+  app.use('/film',filmsRoutes);
 
+  app.get('/film', function(req, res){
+    res.render('film');
+  });
 
-
-app.use('/api', films)
-
-app.use((req, res, next) => {
-    next({ statusCode: 404, error: new Error('path not found') })
+  app.get("*",(req,res)=>{
+    res.status(404).send("Gatito triste - 404 not found");
 })
 
-app.use(({ statusCode, error }, req, res, next) => {
-    res.status(statusCode).json({
-        success: false,
-        message: error.message,
-    })
+app.listen(port, () => {
+  console.log(`Example app listening on http://localhost:${port}`)
 })
-
-module.exports = app
-app.listen(PORT, () => console.info(`> listening at http://localhost:${PORT}`))

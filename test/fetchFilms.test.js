@@ -1,4 +1,4 @@
-const fetchFilm = require('../utils/fetchFilms');
+const fetchFilm = require('../utils/fetchfilms');
 
 describe('fetchFilm utility', () => {
   it('should return movie details for a known movie', async () => {
